@@ -1,0 +1,21 @@
+## Build generated
+.DS_Store
+build/
+DerivedData
+
+## Various settings
+xcuserdata
+
+## Other
+*.xccheckout
+*.xcuserstate
+*.xcscheme
+Manifest.lock
+
+## Pods
+Pods/*
+Podfile.lock
+OnBoardingTestObjC.xcworkspace/contents.xcworkspacedata
+
+## AppCode
+.idea/
