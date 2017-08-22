@@ -13,12 +13,12 @@
 		B2724AAB1F4C16FA00419E46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2724AA91F4C16FA00419E46 /* Main.storyboard */; };
 		B2724AAD1F4C16FA00419E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2724AAC1F4C16FA00419E46 /* Assets.xcassets */; };
 		B2724AB01F4C16FA00419E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2724AAE1F4C16FA00419E46 /* LaunchScreen.storyboard */; };
-		B2724ABB1F4C16FA00419E46 /* OnBoardingTestObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724ABA1F4C16FA00419E46 /* OnBoardingTestObjCTests.m */; };
 		B2724AC91F4C17C900419E46 /* OnBoardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724AC81F4C17C900419E46 /* OnBoardingViewController.m */; };
 		B2724ACB1F4C17D800419E46 /* OnBoardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2724ACA1F4C17D800419E46 /* OnBoardingViewController.storyboard */; };
 		B2724ACE1F4C17F000419E46 /* OnBoardingPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724ACD1F4C17F000419E46 /* OnBoardingPresenter.m */; };
 		B2724AD21F4C1B1C00419E46 /* OnBoardingImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724AD11F4C1B1C00419E46 /* OnBoardingImageManager.m */; };
 		B2724AD51F4C1B7400419E46 /* OnBoardingLocalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724AD41F4C1B7400419E46 /* OnBoardingLocalManager.m */; };
+		B2724AD71F4C1D8800419E46 /* OnBoardingPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724AD61F4C1D8800419E46 /* OnBoardingPresenterTests.m */; };
 		FC6E4DAC685270A99C0D8A2B /* libPods-OnBoardingTestObjCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D92443D9CB2D589BCB916C2D /* libPods-OnBoardingTestObjCTests.a */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,6 @@
 		B2724AAF1F4C16FA00419E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2724AB11F4C16FA00419E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2724AB61F4C16FA00419E46 /* OnBoardingTestObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnBoardingTestObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2724ABA1F4C16FA00419E46 /* OnBoardingTestObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnBoardingTestObjCTests.m; sourceTree = "<group>"; };
 		B2724ABC1F4C16FA00419E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2724AC61F4C17AF00419E46 /* OnBoardingViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnBoardingViewProtocol.h; sourceTree = "<group>"; };
 		B2724AC71F4C17C900419E46 /* OnBoardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnBoardingViewController.h; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		B2724AD11F4C1B1C00419E46 /* OnBoardingImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnBoardingImageManager.m; sourceTree = "<group>"; };
 		B2724AD31F4C1B7400419E46 /* OnBoardingLocalManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnBoardingLocalManager.h; sourceTree = "<group>"; };
 		B2724AD41F4C1B7400419E46 /* OnBoardingLocalManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnBoardingLocalManager.m; sourceTree = "<group>"; };
+		B2724AD61F4C1D8800419E46 /* OnBoardingPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnBoardingPresenterTests.m; sourceTree = "<group>"; };
 		BB4CA3EC3E56A4764EC232A0 /* Pods-OnBoardingTestObjCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingTestObjCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingTestObjCTests/Pods-OnBoardingTestObjCTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D92443D9CB2D589BCB916C2D /* libPods-OnBoardingTestObjCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnBoardingTestObjCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,8 +136,8 @@
 		B2724AB91F4C16FA00419E46 /* OnBoardingTestObjCTests */ = {
 			isa = PBXGroup;
 			children = (
-				B2724ABA1F4C16FA00419E46 /* OnBoardingTestObjCTests.m */,
 				B2724ABC1F4C16FA00419E46 /* Info.plist */,
+				B2724AD61F4C1D8800419E46 /* OnBoardingPresenterTests.m */,
 			);
 			path = OnBoardingTestObjCTests;
 			sourceTree = "<group>";
@@ -349,7 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2724ABB1F4C16FA00419E46 /* OnBoardingTestObjCTests.m in Sources */,
+				B2724AD71F4C1D8800419E46 /* OnBoardingPresenterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
