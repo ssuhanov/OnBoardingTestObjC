@@ -18,6 +18,7 @@
 		B2724ACB1F4C17D800419E46 /* OnBoardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2724ACA1F4C17D800419E46 /* OnBoardingViewController.storyboard */; };
 		B2724ACE1F4C17F000419E46 /* OnBoardingPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724ACD1F4C17F000419E46 /* OnBoardingPresenter.m */; };
 		B2724AD21F4C1B1C00419E46 /* OnBoardingImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724AD11F4C1B1C00419E46 /* OnBoardingImageManager.m */; };
+		B2724AD51F4C1B7400419E46 /* OnBoardingLocalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724AD41F4C1B7400419E46 /* OnBoardingLocalManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		B2724ACD1F4C17F000419E46 /* OnBoardingPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnBoardingPresenter.m; sourceTree = "<group>"; };
 		B2724AD01F4C1B1C00419E46 /* OnBoardingImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnBoardingImageManager.h; sourceTree = "<group>"; };
 		B2724AD11F4C1B1C00419E46 /* OnBoardingImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnBoardingImageManager.m; sourceTree = "<group>"; };
+		B2724AD31F4C1B7400419E46 /* OnBoardingLocalManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnBoardingLocalManager.h; sourceTree = "<group>"; };
+		B2724AD41F4C1B7400419E46 /* OnBoardingLocalManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnBoardingLocalManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,8 @@
 			children = (
 				B2724AD01F4C1B1C00419E46 /* OnBoardingImageManager.h */,
 				B2724AD11F4C1B1C00419E46 /* OnBoardingImageManager.m */,
+				B2724AD31F4C1B7400419E46 /* OnBoardingLocalManager.h */,
+				B2724AD41F4C1B7400419E46 /* OnBoardingLocalManager.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2724AD51F4C1B7400419E46 /* OnBoardingLocalManager.m in Sources */,
 				B2724AD21F4C1B1C00419E46 /* OnBoardingImageManager.m in Sources */,
 				B2724AA81F4C16FA00419E46 /* ViewController.m in Sources */,
 				B2724AA51F4C16FA00419E46 /* AppDelegate.m in Sources */,
