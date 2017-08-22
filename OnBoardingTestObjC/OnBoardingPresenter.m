@@ -36,11 +36,8 @@
     if (nextImageName != nil) {
         [view showImageWithName:nextImageName];
         [self.imageQueue removeObjectAtIndex:0];
-        if ([self.imageQueue firstObject] != nil) {
-            [view updateButtonWithTitle:@"Продолжить"];
-        } else {
-            [view updateButtonWithTitle:@"Старт"];
-        }
+        NSString *buttonTitle = self.imageQueue.count == 0 ? @"Старт" : @"Продолжить";
+        [view updateButtonWithTitle:buttonTitle];
     } else {
         [view startApplication];
         [localManager setFlagOnBoardingCompleted];
