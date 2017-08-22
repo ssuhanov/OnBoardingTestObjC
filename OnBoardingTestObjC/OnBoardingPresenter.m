@@ -32,7 +32,19 @@
 }
 
 - (void)showNextImageWithView:(id<OnBoardingViewProtocol>)view andLocalManager:(OnBoardingLocalManager *)localManager {
-    
+    NSString *nextImageName = [self.imageQueue firstObject];
+    if (nextImageName != nil) {
+        [view showImageWithName:nextImageName];
+        [self.imageQueue removeObjectAtIndex:0];
+        if ([self.imageQueue firstObject] != nil) {
+            [view updateButtonWithTitle:@"Продолжить"];
+        } else {
+            [view updateButtonWithTitle:@"Старт"];
+        }
+    } else {
+        [view startApplication];
+        [localManager setFlagOnBoardingCompleted];
+    }
 }
 
 @end
