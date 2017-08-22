@@ -14,6 +14,9 @@
 		B2724AAD1F4C16FA00419E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2724AAC1F4C16FA00419E46 /* Assets.xcassets */; };
 		B2724AB01F4C16FA00419E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2724AAE1F4C16FA00419E46 /* LaunchScreen.storyboard */; };
 		B2724ABB1F4C16FA00419E46 /* OnBoardingTestObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724ABA1F4C16FA00419E46 /* OnBoardingTestObjCTests.m */; };
+		B2724AC91F4C17C900419E46 /* OnBoardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724AC81F4C17C900419E46 /* OnBoardingViewController.m */; };
+		B2724ACB1F4C17D800419E46 /* OnBoardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2724ACA1F4C17D800419E46 /* OnBoardingViewController.storyboard */; };
+		B2724ACE1F4C17F000419E46 /* OnBoardingPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724ACD1F4C17F000419E46 /* OnBoardingPresenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		B2724AB61F4C16FA00419E46 /* OnBoardingTestObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnBoardingTestObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2724ABA1F4C16FA00419E46 /* OnBoardingTestObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnBoardingTestObjCTests.m; sourceTree = "<group>"; };
 		B2724ABC1F4C16FA00419E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2724AC61F4C17AF00419E46 /* OnBoardingViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnBoardingViewProtocol.h; sourceTree = "<group>"; };
+		B2724AC71F4C17C900419E46 /* OnBoardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnBoardingViewController.h; sourceTree = "<group>"; };
+		B2724AC81F4C17C900419E46 /* OnBoardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnBoardingViewController.m; sourceTree = "<group>"; };
+		B2724ACA1F4C17D800419E46 /* OnBoardingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnBoardingViewController.storyboard; sourceTree = "<group>"; };
+		B2724ACC1F4C17F000419E46 /* OnBoardingPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnBoardingPresenter.h; sourceTree = "<group>"; };
+		B2724ACD1F4C17F000419E46 /* OnBoardingPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnBoardingPresenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		B2724A9F1F4C16FA00419E46 /* OnBoardingTestObjC */ = {
 			isa = PBXGroup;
 			children = (
+				B2724AC51F4C178F00419E46 /* OnBoarding */,
 				B2724AA31F4C16FA00419E46 /* AppDelegate.h */,
 				B2724AA41F4C16FA00419E46 /* AppDelegate.m */,
 				B2724AA61F4C16FA00419E46 /* ViewController.h */,
@@ -109,6 +119,19 @@
 				B2724ABC1F4C16FA00419E46 /* Info.plist */,
 			);
 			path = OnBoardingTestObjCTests;
+			sourceTree = "<group>";
+		};
+		B2724AC51F4C178F00419E46 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				B2724AC61F4C17AF00419E46 /* OnBoardingViewProtocol.h */,
+				B2724AC71F4C17C900419E46 /* OnBoardingViewController.h */,
+				B2724AC81F4C17C900419E46 /* OnBoardingViewController.m */,
+				B2724ACA1F4C17D800419E46 /* OnBoardingViewController.storyboard */,
+				B2724ACC1F4C17F000419E46 /* OnBoardingPresenter.h */,
+				B2724ACD1F4C17F000419E46 /* OnBoardingPresenter.m */,
+			);
+			name = OnBoarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2724ACB1F4C17D800419E46 /* OnBoardingViewController.storyboard in Resources */,
 				B2724AB01F4C16FA00419E46 /* LaunchScreen.storyboard in Resources */,
 				B2724AAD1F4C16FA00419E46 /* Assets.xcassets in Resources */,
 				B2724AAB1F4C16FA00419E46 /* Main.storyboard in Resources */,
@@ -218,6 +242,8 @@
 				B2724AA81F4C16FA00419E46 /* ViewController.m in Sources */,
 				B2724AA51F4C16FA00419E46 /* AppDelegate.m in Sources */,
 				B2724AA21F4C16FA00419E46 /* main.m in Sources */,
+				B2724AC91F4C17C900419E46 /* OnBoardingViewController.m in Sources */,
+				B2724ACE1F4C17F000419E46 /* OnBoardingPresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +446,7 @@
 				B2724AC11F4C16FA00419E46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2724AC21F4C16FA00419E46 /* Build configuration list for PBXNativeTarget "OnBoardingTestObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +455,7 @@
 				B2724AC41F4C16FA00419E46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
