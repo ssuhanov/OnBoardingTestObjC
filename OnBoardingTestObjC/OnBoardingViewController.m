@@ -25,8 +25,13 @@
     self.presenter = [[OnBoardingPresenter alloc] init];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.presenter showNextImageWithView:self];
+}
+
 - (IBAction)continueAction:(UIButton *)sender {
-    
+    [self.presenter showNextImageWithView:self];
 }
 
 #pragma mark - OnBoardingViewProtocol
