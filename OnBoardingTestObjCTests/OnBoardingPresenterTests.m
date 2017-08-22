@@ -41,4 +41,40 @@
     self.emptyImageQueue = @[];
 }
 
+- (void)testNextImageExtractsCorrectly {
+    self.instance = [[OnBoardingPresenter alloc] initWithImageQueue:self.fullImageQueue];
+    [self.instance showNextImageWithView:self.view];
+    [verify(self.view) showImageWithName:self.correctNextImageName];
+}
+
+- (void)testImageQueueReducesCorrectly {
+    self.instance = [[OnBoardingPresenter alloc] initWithImageQueue:self.fullImageQueue];
+    [self.instance showNextImageWithView:self.view];
+    XCTAssertEqual(self.instance.imageQueue.count, self.fullImageQueue.count - 1, @"image queue should be reduced by one");
+}
+
+- (void)testButtonTitleUpdatesCorrectly {
+    self.instance = [[OnBoardingPresenter alloc] initWithImageQueue:self.fullImageQueue];
+    [self.instance showNextImageWithView:self.view];
+    [verify(self.view) updateButtonWithTitle:@"Продолжить"];
+}
+
+- (void)testPrepareForApplicationStartCorrectly {
+    self.instance = [[OnBoardingPresenter alloc] initWithImageQueue:self.lastImageQueue];
+    [self.instance showNextImageWithView:self.view];
+    [verify(self.view) updateButtonWithTitle:@"Старт"];
+}
+
+- (void)testApplicationStartsCorrectly {
+    self.instance = [[OnBoardingPresenter alloc] initWithImageQueue:self.emptyImageQueue];
+    [self.instance showNextImageWithView:self.view];
+    [verify(self.view) startApplication];
+}
+
+- (void)testLocalManagerSetsOnBoardingFlagCorrectly {
+    self.instance = [[OnBoardingPresenter alloc] initWithImageQueue:self.emptyImageQueue];
+    [self.instance showNextImageWithView:self.view andLocalManager:self.localManager];
+    [verify(self.localManager) setFlagOnBoardingCompleted];
+}
+
 @end
