@@ -8,4 +8,8 @@
 
 @protocol OnBoardingViewProtocol <NSObject>
 
+- (void)showImageWithName:(NSString *)imageName;
+- (void)updateButtonWithTitle:(NSString *)title;
+- (void)startApplication;
+
 @end

@@ -29,4 +29,19 @@
     
 }
 
+#pragma mark - OnBoardingViewProtocol
+
+- (void)showImageWithName:(NSString *)imageName {
+    self.imageView.image = [UIImage imageNamed:imageName];
+}
+
+- (void)updateButtonWithTitle:(NSString *)title {
+    [self.continueButton setTitle:title forState:UIControlStateNormal];
+}
+
+- (void)startApplication {
+    // some logic for application start
+    NSLog(@"Application is started");
+}
+
 @end

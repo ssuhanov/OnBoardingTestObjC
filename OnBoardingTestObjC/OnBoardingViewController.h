@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "OnBoardingViewProtocol.h"
 
-@interface OnBoardingViewController : ViewController
+@interface OnBoardingViewController : ViewController <OnBoardingViewProtocol>
 
 @end
