@@ -17,6 +17,7 @@
 		B2724AC91F4C17C900419E46 /* OnBoardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724AC81F4C17C900419E46 /* OnBoardingViewController.m */; };
 		B2724ACB1F4C17D800419E46 /* OnBoardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2724ACA1F4C17D800419E46 /* OnBoardingViewController.storyboard */; };
 		B2724ACE1F4C17F000419E46 /* OnBoardingPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724ACD1F4C17F000419E46 /* OnBoardingPresenter.m */; };
+		B2724AD21F4C1B1C00419E46 /* OnBoardingImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2724AD11F4C1B1C00419E46 /* OnBoardingImageManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		B2724ACA1F4C17D800419E46 /* OnBoardingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnBoardingViewController.storyboard; sourceTree = "<group>"; };
 		B2724ACC1F4C17F000419E46 /* OnBoardingPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnBoardingPresenter.h; sourceTree = "<group>"; };
 		B2724ACD1F4C17F000419E46 /* OnBoardingPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnBoardingPresenter.m; sourceTree = "<group>"; };
+		B2724AD01F4C1B1C00419E46 /* OnBoardingImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnBoardingImageManager.h; sourceTree = "<group>"; };
+		B2724AD11F4C1B1C00419E46 /* OnBoardingImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnBoardingImageManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +133,18 @@
 				B2724ACA1F4C17D800419E46 /* OnBoardingViewController.storyboard */,
 				B2724ACC1F4C17F000419E46 /* OnBoardingPresenter.h */,
 				B2724ACD1F4C17F000419E46 /* OnBoardingPresenter.m */,
+				B2724ACF1F4C1AFB00419E46 /* Services */,
 			);
 			name = OnBoarding;
+			sourceTree = "<group>";
+		};
+		B2724ACF1F4C1AFB00419E46 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B2724AD01F4C1B1C00419E46 /* OnBoardingImageManager.h */,
+				B2724AD11F4C1B1C00419E46 /* OnBoardingImageManager.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2724AD21F4C1B1C00419E46 /* OnBoardingImageManager.m in Sources */,
 				B2724AA81F4C16FA00419E46 /* ViewController.m in Sources */,
 				B2724AA51F4C16FA00419E46 /* AppDelegate.m in Sources */,
 				B2724AA21F4C16FA00419E46 /* main.m in Sources */,
